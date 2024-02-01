@@ -5,7 +5,7 @@ import { AdType } from "./AdList";
 function AdCard({ it }: { it: AdType }) {
   const { img, title, subText } = it;
   return (
-    <div className="flex flex-row items-center justify-start gap-3 rounded-2xl bg-white lg:min-w-[600px]">
+    <div style={{boxShadow: '0px 0px 10.87px 0px rgba(0, 0, 0, 0.25)'}} className="flex flex-row items-center justify-start gap-3 rounded-2xl bg-white lg:min-w-[600px] mb-6">
       <Image
         className="rounded-l-xl  max-w-full h-full"
         src={img}

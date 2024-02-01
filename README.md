@@ -1,9 +1,7 @@
-<<<<<<< HEAD
-# check here :[Live Link](https://weframe-tushark.netlify.app/)
-=======
+
 # check here:
   [Demo Link](https://weframe-tushark.netlify.app/)
->>>>>>> cd9286a38f4d0d129ad8d499f89f7e4be3195c4d
+
 
 ## Project Overview
 

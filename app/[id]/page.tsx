@@ -4,11 +4,18 @@ import { StoriesList } from "@/components/ui/StoriesList";
 import { useParams } from "next/navigation";
 
 import Profile from "@/components/NavBar/Profile";
-import { LeftIcon, RightIcon, UserIcon, downIcon } from "@/components/ui/Icons";
-// import { useRouter } from "next/router";
+import {
+  BackIcon,
+  LeftIcon,
+  RightIcon,
+  UserIcon,
+  downIcon,
+} from "@/components/ui/Icons";
+import { useRouter } from "next/navigation";
 
 const IdPage = () => {
   const path = useParams();
+  const router = useRouter();
 
   const CurrentStory = StoriesList.find((el) => el.id + "" === path.id);
 
@@ -20,8 +27,11 @@ const IdPage = () => {
     return (
       <section className="flex-grow p-4">
         <div className="flex flex-row justify-between  items-center w-full">
-          <div className="flex flex-row gap-2">
-            <button> Back</button>
+          <div className="flex flex-row justify-start items-center gap-2">
+            <button onClick={() => router.back()} className="">
+              {" "}
+              {BackIcon}
+            </button>
             <h1>Stories</h1>
           </div>
           <Profile />

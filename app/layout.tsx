@@ -15,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={urban.className}>
-      <body className="bg-[#e7edf1cc]">
+      <body className="bg-[#f2f7facc]">
         <main className="flex flex-row flex-1">
           <SideBar />
           <section className="overflow-x-hidden w-full scrollbar-none">
