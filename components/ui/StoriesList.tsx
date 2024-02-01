@@ -1,3 +1,13 @@
+export interface StorYType {
+  id: number;
+  title: string;
+  topic: string;
+  date: string;
+  isPublished: boolean;
+  views: number;
+  img: string;
+}
+
 export const StoriesList = [
   {
     id: 8797,

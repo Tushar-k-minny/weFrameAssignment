@@ -1,9 +1,16 @@
+import { StaticImageData } from "next/image";
 import ad1 from "../../public/ad1.png";
 import ad2 from "../../public/ad2.png";
 
 import ad3 from "../../public/ad3.png";
 
-export const AdList = [
+export interface AdType {
+  img: StaticImageData;
+  title: string;
+  subText: string;
+}
+
+export const AdList: AdType[] = [
   {
     img: ad1,
     title: "Build your business",

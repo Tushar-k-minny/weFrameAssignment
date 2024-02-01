@@ -1,11 +1,16 @@
 import React from "react";
 import Image from "next/image";
+import { AdType } from "./AdList";
 
-function AdCard({ it }) {
+function AdCard({ it }: { it: AdType }) {
   const { img, title, subText } = it;
   return (
     <div className="flex flex-row items-center justify-start gap-3 rounded-2xl bg-white lg:min-w-[600px]">
-      <Image className="rounded-l-xl  max-w-full h-full" src={img} alt={title + "image"} />
+      <Image
+        className="rounded-l-xl  max-w-full h-full"
+        src={img}
+        alt={title + "image"}
+      />
       <div className="mr-6 mt-2 flex flex-col justify-start gap-2  max-w-[400px]">
         <div className="text-lg font-semibold ">{title}</div>
         <p>{subText}</p>

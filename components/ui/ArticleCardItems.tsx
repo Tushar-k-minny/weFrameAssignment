@@ -1,15 +1,15 @@
-import buisness from "../../public/Buisness.png"
-import economy from "../../public/Economy.png"
-import politics from "../../public/Politics.png"
-
+import { StaticImageData } from "next/image";
+import buisness from "../../public/Buisness.png";
+import economy from "../../public/Economy.png";
+import politics from "../../public/Politics.png";
 
 export interface ArticleItems {
   title: string;
   topic: string;
   writer: string;
-  isPublished: true;
+  isPublished: boolean;
   tags: string[];
-  image: string;
+  image: StaticImageData;
 }
 export const ArticleItems = [
   {
@@ -28,7 +28,7 @@ export const ArticleItems = [
     writer: "Maria Doe",
     isPublished: true,
     tags: ["World", "Population"],
-    image: economy
+    image: economy,
   },
   {
     topic: "Politics",
@@ -37,7 +37,6 @@ export const ArticleItems = [
     writer: "Maria Doe",
     isPublished: true,
     tags: ["Politics", "Defense"],
-    image: politics
+    image: politics,
   },
-
 ];

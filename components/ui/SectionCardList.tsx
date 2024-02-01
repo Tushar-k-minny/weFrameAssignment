@@ -1,8 +1,13 @@
+import { ReactElement } from "react";
 import { AdIcon, ArticleIcon, CategIcon, StoryIcon } from "./Icons";
 
+export interface SectionCardType {
+  title: string;
+  total: string;
+  icon: ReactElement;
+}
 
-
-export const SectionCardList = [
+export const SectionCardList: SectionCardType[] = [
   {
     title: "Articles",
     total: "4,950",

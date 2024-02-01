@@ -1,7 +1,9 @@
 import Link from 'next/link'
+import { StorYType } from './StoriesList';
 
 
-export const StoriesCard = ({ it }) => {
+
+export const StoriesCard = ({ it }:{it:StorYType}) => {
   const { title, topic, isPublished, views, img, id} = it;
   const date = "20 Sept 2023";
   const style = {
