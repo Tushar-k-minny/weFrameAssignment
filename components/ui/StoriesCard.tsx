@@ -1,10 +1,8 @@
-import Link from 'next/link'
-import { StorYType } from './StoriesList';
+import Link from "next/link";
+import { StorYType } from "./StoriesList";
 
-
-
-export const StoriesCard = ({ it }:{it:StorYType}) => {
-  const { title, topic, isPublished, views, img, id} = it;
+export const StoriesCard = ({ it }: { it: StorYType }) => {
+  const { title, topic, isPublished, views, img, id } = it;
   const date = "20 Sept 2023";
   const style = {
     backgroundImage: `url( ${img} )`,
@@ -13,7 +11,7 @@ export const StoriesCard = ({ it }:{it:StorYType}) => {
   return (
     <div
       style={{ ...style }}
-      className="flex flex-col justify-between bg-center p-4 rounded-xl items-start h-[400px] max-w-[300px]">
+      className="flex flex-col justify-between bg-center p-4 pr-8 rounded-xl items-start h-[400px] ">
       <div className="w-full flex flex-row justify-end items-center gap-2">
         <div className="flex flex-row gap-1 justify-center text-xs items-center bg-slate-200 py-1 px-2 rounded-md">
           <svg
@@ -76,7 +74,9 @@ export const StoriesCard = ({ it }:{it:StorYType}) => {
         <div className="flex flex-row justify-between items-center gap-6">
           <div className="flex flex-row gap-2 justify-between items-center ">
             <h3 className="text-sm text-white  font-extrabold">{topic}</h3>
-            <div className="text-xs text-slate-50 font-light">{date}</div>
+            <div className="text-xs text-slate-50 font-light w-[100px] ">
+              {date}
+            </div>
           </div>
           <button className="px-4 py-2 text-sm text-[#7950F2] bg-[#E3D5FF] rounded-md font-semibold">
             {isPublished ? "Published" : "Created"}

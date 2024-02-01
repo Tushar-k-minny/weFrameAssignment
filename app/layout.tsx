@@ -18,7 +18,9 @@ export default function RootLayout({
       <body className="bg-[#e7edf1cc]">
         <main className="flex flex-row flex-1">
           <SideBar />
-          <section className="overflow-x-hidden w-full">{children}</section>
+          <section className="overflow-x-hidden w-full scrollbar-none">
+            {children}
+          </section>
         </main>
       </body>
     </html>

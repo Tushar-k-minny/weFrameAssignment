@@ -53,7 +53,9 @@ const Home = () => {
             </Link>
           </div>
 
-          <div className="flex flex-row flex-wrap justify-center lg:flex-nowrap lg:overflow-x-scroll lg:justify-start lg:pb-4 gap-4 ">
+          <div
+            className="flex flex-row flex-wrap justify-center lg:flex-nowrap lg:overflow-x-scroll lg:justify-start lg:p-4 gap-4 lg:scrollbar-none
+           ">
             {StoriesList.map((it, index) => {
               return <StoriesCard key={index} it={it} />;
             })}
@@ -68,7 +70,7 @@ const Home = () => {
             </Link>
           </div>
 
-          <div className="flex  flex-wrap justify-center  lg:justify-start lg:flex-nowrap lg:overflow-x-scroll   flex-row    gap-4  ">
+          <div className="flex  flex-wrap justify-center  lg:justify-start lg:flex-nowrap lg:overflow-x-scroll lg:scrollbar-none  flex-row    gap-6  ">
             {AdList.map((it, index) => {
               return <AdCard key={index} it={it} />;
             })}

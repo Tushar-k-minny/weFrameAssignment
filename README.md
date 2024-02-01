@@ -1,3 +1,5 @@
+# check here :[Live Link](https://weframe-tushark.netlify.app/)
+
 ## Project Overview
 
 The weFrame Assignment project is a web application developed using Next.js. It includes various dependencies and dev dependencies to enhance its functionality and development process.
@@ -9,7 +11,7 @@ The weFrame Assignment project is a web application developed using Next.js. It 
 - **UI Libraries:** Shadcn
 - **Development Tools:** NextJs
 
-## Hou to Run
+## How to Run
 
 ### Frontend
 
